@@ -1,0 +1,6 @@
+# Useful linux packages
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - byobu
