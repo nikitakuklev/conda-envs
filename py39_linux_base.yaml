@@ -14,19 +14,22 @@ dependencies:
 
   - matplotlib
   - bokeh
- 
+  - seaborn
+  - tqdm
+  - pyqt
+  
   - numpy
   - scipy
   - pandas
-  - seaborn
   - scikit-learn
   - scikit-image
   - astropy
+  - pyarrow
 
   - numba
   - sympy
   - numexpr
-  - cython 
+  - cython
 
   - hdf5
   - h5py
@@ -45,3 +48,6 @@ dependencies:
 
   - psutil
   - imageio
+  - pillow
+  
+  - pytest
