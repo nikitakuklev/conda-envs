@@ -1,0 +1,49 @@
+# Base: all the typical packages used for data analysis and visualization
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.9
+  - pip
+  
+  - mkl
+  
+  - ipython
+  - jupyterlab
+  - jupyter-server-proxy
+  - dask
+  - dask-jobqueue
+  - dask-labextension
+
+  - matplotlib
+  - bokeh
+ 
+  - numpy
+  - scipy
+  - pandas
+  - seaborn
+  - scikit-learn
+  - scikit-image
+  - astropy
+
+  - numba
+  - sympy
+  - numexpr
+
+  - hdf5
+  - h5py
+  - pytables
+  - lz4
+  - blosc
+  - zstd
+  - yaml
+
+  - fftw
+  - pyfftw
+
+  - requests
+  - aiohttp
+  - nest-asyncio
+
+  - psutil
+  - imageio

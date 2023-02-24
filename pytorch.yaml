@@ -1,0 +1,7 @@
+# PyTorch
+# Note that special syntax for specifying channels behaves weirdly (see https://github.com/conda/conda/pull/7178)
+dependencies:
+  - pytorch::pytorch
+  - pytorch::torchaudio
+  - pytorch::torchvision
+  - conda-forge::cudatoolkit>=11.3

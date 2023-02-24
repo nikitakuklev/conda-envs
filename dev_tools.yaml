@@ -1,6 +1,5 @@
 # Useful linux packages
 channels:
   - conda-forge
-  - defaults
 dependencies:
   - pytest
