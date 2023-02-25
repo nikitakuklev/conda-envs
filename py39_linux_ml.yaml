@@ -1,5 +1,7 @@
-# Base: all the typical packages used for data analysis and visualization
+# Windows all-in-one standard for ML
 channels:
+  - pytorch
+  - gpytorch
   - conda-forge
   - nodefaults
 dependencies:
@@ -18,7 +20,8 @@ dependencies:
   - seaborn
   - tqdm
   - pyqt
-  
+  - ipywidgets
+ 
   - numpy
   - scipy
   - pandas
@@ -39,6 +42,7 @@ dependencies:
   - blosc
   - zstd
   - yaml
+  - pydantic
 
   - fftw
   - pyfftw
@@ -46,12 +50,21 @@ dependencies:
   - requests
   - aiohttp
   - nest-asyncio
+  - httpx
 
   - psutil
   - imageio
-  - pillow
-  
-  - pytest
 
   - "ray-default"
+  - prefect
+  - pytorch::pytorch
+  - pytorch::torchaudio
+  - pytorch::torchvision
+  - pytorch::cpuonly
+  - gpytorch
+  - botorch
+  - deap
+  
+  # linux
   - htop
+  - ncdu
