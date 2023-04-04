@@ -1,7 +1,8 @@
-# Windows all-in-one standard for ML
+# Unix all-in-one standard for ML
 channels:
   - pytorch
   - gpytorch
+  - plotly
   - nvidia
   - conda-forge
   - nodefaults
@@ -19,8 +20,13 @@ dependencies:
   - matplotlib
   - bokeh
   - seaborn
+  - plotly::plotly
+  - dash
+  - jupyter-dash
   - tqdm
   - pyqt
+  - pyqtwebengine
+  - pyqtgraph
   - ipywidgets
  
   - numpy
@@ -41,6 +47,7 @@ dependencies:
   - pytables
   - lz4
   - blosc
+  - brotli
   - zstd
   - yaml
   - pydantic
@@ -52,6 +59,10 @@ dependencies:
   - aiohttp
   - nest-asyncio
   - httpx
+  - loky
+  - sqlite
+  - python-gssapi
+  - caproto
 
   - psutil
   - imageio
@@ -61,7 +72,7 @@ dependencies:
   - pytorch::pytorch
   - pytorch::torchaudio
   - pytorch::torchvision
-  - pytorch::pytorch-cuda=11.7
+  - pytorch::pytorch-cuda=11.8
   - gpytorch
   - botorch
   - deap

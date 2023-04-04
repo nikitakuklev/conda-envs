@@ -2,6 +2,7 @@
 channels:
   - pytorch
   - gpytorch
+  - plotly
   - conda-forge
   - nodefaults
 dependencies:
@@ -18,8 +19,13 @@ dependencies:
   - matplotlib
   - bokeh
   - seaborn
+  - plotly::plotly
+  - dash
+  - jupyter-dash
   - tqdm
   - pyqt
+  - pyqtwebengine
+  - pyqtgraph
   - ipywidgets
  
   - numpy
@@ -40,6 +46,7 @@ dependencies:
   - pytables
   - lz4
   - blosc
+  - brotli
   - zstd
   - yaml
   - pydantic
@@ -51,6 +58,10 @@ dependencies:
   - aiohttp
   - nest-asyncio
   - httpx
+  - loky
+  - sqlite
+  - python-gssapi
+  - caproto
 
   - psutil
   - imageio
