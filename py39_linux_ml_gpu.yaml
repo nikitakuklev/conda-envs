@@ -49,6 +49,7 @@ dependencies:
   - blosc
   - brotli
   - zstd
+  - zstandard
   - yaml
   - pydantic
 
