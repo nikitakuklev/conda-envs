@@ -1,0 +1,84 @@
+# Unix all-in-one standard ML
+channels:
+  - pytorch
+  - gpytorch
+  - plotly
+  - conda-forge
+  - nodefaults
+
+dependencies:
+  - python=3.9
+  - pip
+  - pytest
+
+  - ipython
+  - jupyterlab
+  - jupyter-server-proxy
+  - dask
+  - dask-jobqueue
+  - dask-labextension
+
+  - matplotlib
+  - bokeh
+  - seaborn
+  - plotly::plotly
+  - dash
+  - jupyter-dash
+  - tqdm
+  - pyqt
+  - pyqtwebengine
+  - pyqtgraph
+  - ipywidgets
+ 
+  - numpy>=1.24
+  - scipy
+  - pandas>=2.0
+  - scikit-learn
+  - scikit-image
+  - astropy
+  - pyarrow
+
+  - numba
+  - sympy
+  - numexpr
+  - cython
+
+  - hdf5
+  - h5py
+  - pytables
+  - lz4
+  - blosc
+  - brotli
+  - zstd
+  - zstandard
+  - yaml
+  - pydantic
+
+  - fftw
+  - pyfftw
+
+  - requests
+  - aiohttp
+  - nest-asyncio
+  - httpx
+  - loky
+  - sqlite
+  - python-gssapi
+  - caproto
+
+  - psutil
+  - imageio
+
+  - "ray-default"
+  - prefect
+  - pytorch::pytorch>=2.0
+  - pytorch::torchaudio
+  - pytorch::torchvision
+  - pytorch::cpuonly
+  - gpytorch
+  - botorch
+  - deap
+  
+  # linux
+  - htop
+  - ncdu
