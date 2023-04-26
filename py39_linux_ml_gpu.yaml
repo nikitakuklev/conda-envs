@@ -6,9 +6,11 @@ channels:
   - nvidia
   - conda-forge
   - nodefaults
+  
 dependencies:
   - python=3.9
   - pip
+  - pytest
   
   - ipython
   - jupyterlab
@@ -29,9 +31,9 @@ dependencies:
   - pyqtgraph
   - ipywidgets
  
-  - numpy
+  - numpy>=1.24
   - scipy
-  - pandas
+  - pandas<2.0,>=1.5
   - scikit-learn
   - scikit-image
   - astropy

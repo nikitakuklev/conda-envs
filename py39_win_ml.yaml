@@ -3,11 +3,14 @@ channels:
   - pytorch
   - gpytorch
   - plotly
+  - nvidia
   - conda-forge
   - nodefaults
+  
 dependencies:
   - python=3.9
   - pip
+  - pytest
   
   - ipython
   - jupyterlab
@@ -28,9 +31,9 @@ dependencies:
   - pyqtgraph
   - ipywidgets
  
-  - numpy
+  - numpy>=1.23
   - scipy
-  - pandas
+  - pandas<2.0,>=1.5
   - scikit-learn
   - scikit-image
   - astropy
@@ -48,6 +51,7 @@ dependencies:
   - blosc
   - brotli
   - zstd
+  - zstandard
   - yaml
   - pydantic
 
@@ -71,7 +75,7 @@ dependencies:
   - pytorch::pytorch
   - pytorch::torchaudio
   - pytorch::torchvision
-  - pytorch::cpuonly
+  - pytorch::pytorch-cuda=11.8
   - gpytorch
   - botorch
   - deap
