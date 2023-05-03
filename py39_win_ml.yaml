@@ -33,7 +33,7 @@ dependencies:
  
   - numpy>=1.23
   - scipy
-  - pandas<2.0,>=1.5
+  - pandas>=2.0
   - scikit-learn
   - scikit-image
   - astropy
@@ -71,7 +71,7 @@ dependencies:
   - imageio
 
   - "ray-default"
-  - prefect
+#  - prefect
   - pytorch::pytorch
   - pytorch::torchaudio
   - pytorch::torchvision
