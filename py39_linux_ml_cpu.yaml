@@ -22,6 +22,8 @@ dependencies:
   - bokeh
   - seaborn
   - plotly::plotly
+  - corner
+  - arviz
   - dash
   - jupyter-dash
   - tqdm
@@ -30,15 +32,15 @@ dependencies:
   - pyqtgraph
   - ipywidgets
  
-  - numpy>=1.24
-  - scipy
+  - numpy>=1.23
+  - scipy>=1.10
   - pandas>=2.0
   - scikit-learn
   - scikit-image
   - astropy
   - pyarrow
 
-  - numba
+  #- numba
   - sympy
   - numexpr
   - cython
@@ -77,8 +79,12 @@ dependencies:
   - pytorch::cpuonly
   - gpytorch
   - botorch
+  - pyro-ppl
   - deap
+  - jax>=0.4
+  - numpyro
   
   # linux
   - htop
   - ncdu
+  #- mkl
