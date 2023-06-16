@@ -1,0 +1,72 @@
+# Windows all-in-one standard for ML
+# conda env create -f "I:\Data\Run_4\NIO\nkuklev\Software\py39ml_remote.yaml"
+name: py39ml
+channels:
+  - pytorch
+  - gpytorch
+  - conda-forge
+  - nodefaults
+dependencies:
+  - python=3.9
+  - pip
+  
+  - ipython
+  - jupyterlab
+  - jupyter-server-proxy
+  - dask
+  - dask-jobqueue
+  - dask-labextension
+
+  - matplotlib
+  - bokeh
+  - seaborn
+  - tqdm
+  - pyqt
+ 
+  - numpy
+  - scipy
+  - pandas
+  - scikit-learn
+  - scikit-image
+  - astropy
+  - pyarrow
+
+  - numba
+  - sympy
+  - numexpr
+  - cython
+
+  - hdf5
+  - h5py
+  - pytables
+  - lz4
+  - blosc
+  - zstd
+  - yaml
+  - pydantic
+
+  - fftw
+  - pyfftw
+
+  - requests
+  - aiohttp
+  - nest-asyncio
+  - httpx
+  - python-gssapi
+
+  - psutil
+  - imageio
+
+  - "ray-default"
+  - prefect
+  - deap
+  - pytorch::pytorch
+  - pytorch::torchaudio
+  - pytorch::torchvision
+  - pytorch::cpuonly
+  - botorch
+  
+variables:
+    IOTA_DATA_DIR: "I:\\Data\\Run_4\\NIO\\Data"
+    IOTA_SW_DIR: "I:\\Data\\Run_4\\NIO\\nkuklev\\Software"
+    IOTA_SCRIPTS_DIR: "I:\\Data\\Run_4\\NIO\\Scripts"
