@@ -54,6 +54,7 @@ dependencies:
   - zstandard
   - yaml
   - pydantic>=1.10,<2.0
+  - orjson
 
   - fftw
   - pyfftw
