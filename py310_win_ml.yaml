@@ -23,6 +23,8 @@ dependencies:
   - bokeh
   - seaborn
   - plotly::plotly
+  - corner
+  - arviz
   - dash
   - jupyter-dash
   - tqdm
