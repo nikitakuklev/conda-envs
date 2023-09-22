@@ -8,7 +8,7 @@ channels:
   - nodefaults
   
 dependencies:
-  - python=3.9
+  - python=3.10
   - pip
   - pytest
   - ruff
@@ -42,7 +42,7 @@ dependencies:
   - astropy
   - pyarrow
 
-  #- numba
+  - numba
   - sympy
   - numexpr
   - cython
@@ -81,7 +81,7 @@ dependencies:
   - pytorch::torchvision
   - pytorch::pytorch-cuda=11.8
   - gpytorch
-  - botorch
+  - botorch>=0.9
   - pyro-ppl
   - deap
   - jax>=0.4
