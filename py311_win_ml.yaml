@@ -53,7 +53,7 @@ dependencies:
   - zstd
   - zstandard
   - yaml
-  - pydantic>=1.10,<2.0
+  - pydantic>=2.3
   - orjson
 
   - fftw
@@ -71,7 +71,7 @@ dependencies:
   - psutil
   - imageio
 
-  - "ray-default"
+#  - "ray-default"
 #  - prefect
   - pytorch::pytorch
   - pytorch::torchaudio
