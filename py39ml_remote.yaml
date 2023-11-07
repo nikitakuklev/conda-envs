@@ -6,9 +6,11 @@ channels:
   - gpytorch
   - conda-forge
   - nodefaults
+  
 dependencies:
   - python=3.9
   - pip
+  - pytest
   
   - ipython
   - jupyterlab
@@ -22,10 +24,13 @@ dependencies:
   - seaborn
   - tqdm
   - pyqt
+  - pyqtwebengine
+  - pyqtgraph
+  - ipywidgets
  
-  - numpy
+  - numpy>=1.23
   - scipy
-  - pandas
+  - pandas>=2.0
   - scikit-learn
   - scikit-image
   - astropy
@@ -41,7 +46,9 @@ dependencies:
   - pytables
   - lz4
   - blosc
+  - brotli
   - zstd
+  - zstandard
   - yaml
   - pydantic>=1.10,<2.0
   - orjson
@@ -53,20 +60,24 @@ dependencies:
   - aiohttp
   - nest-asyncio
   - httpx
+  - loky
+  - sqlite
   - python-gssapi
+  - caproto
 
   - psutil
   - imageio
 
   - "ray-default"
-  - prefect
-  - deap
+#  - prefect
   - pytorch::pytorch
   - pytorch::torchaudio
   - pytorch::torchvision
   - pytorch::cpuonly
-  - botorch
-  
+  - gpytorch
+  - botorch>=0.8
+  - deap
+
 variables:
     IOTA_DATA_DIR: "I:\\Data\\Run_4\\NIO\\Data"
     IOTA_SW_DIR: "I:\\Data\\Run_4\\NIO\\nkuklev\\Software"
