@@ -76,7 +76,7 @@ dependencies:
   - psutil
   - imageio
 
-  - "ray-default"
+  #- "ray-default"
   - prefect
   - pytorch::pytorch>=2.0
   - pytorch::torchaudio
