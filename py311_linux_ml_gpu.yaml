@@ -33,6 +33,7 @@ dependencies:
   - pyqt
   - pyqtwebengine
   - pyqtgraph
+  - qscintilla2
   - ipywidgets
  
   - numpy>=1.24
