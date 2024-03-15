@@ -1,4 +1,4 @@
-# Unix all-in-one standard for ML
+# Windows all-in-one standard for ML
 channels:
   - pytorch
   - gpytorch
@@ -25,13 +25,10 @@ dependencies:
   - bokeh
   - seaborn
   - plotly::plotly
-  - corner
-  - arviz
   - dash
   - jupyter-dash
   - tqdm
-  - pyqt
-  - pyqtwebengine
+  - pyside6
   - pyqtgraph
   - qtawesome
   - qtpy
@@ -41,7 +38,6 @@ dependencies:
   - numpy>=1.24
   - scipy>=1.10
   - pandas>=2.0
-  - polars
   - scikit-learn
   - scikit-image
   - astropy
@@ -79,19 +75,12 @@ dependencies:
   - psutil
   - imageio
 
-  #- "ray-default"
-  - prefect
-  - pytorch::pytorch>=2.0
+#  - "ray-default"
+#  - prefect
+  - pytorch::pytorch
   - pytorch::torchaudio
   - pytorch::torchvision
   - pytorch::pytorch-cuda=12.1
   - gpytorch
   - botorch>=0.95
-  - pyro-ppl
   - deap
-  - jax>=0.4
-  - numpyro
-  
-  # linux
-  - htop
-  - ncdu
