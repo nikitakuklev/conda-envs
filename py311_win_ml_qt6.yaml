@@ -25,6 +25,8 @@ dependencies:
   - bokeh
   - seaborn
   - plotly::plotly
+  - corner
+  - arviz
   - dash
   - jupyter-dash
   - tqdm
@@ -57,7 +59,7 @@ dependencies:
   - zstd
   - zstandard
   - yaml
-  - pydantic>=2.4
+  - pydantic>=2.5
   - orjson
 
   - fftw
@@ -77,10 +79,10 @@ dependencies:
 
 #  - "ray-default"
 #  - prefect
-  - pytorch::pytorch
+  - pytorch::pytorch>=2.1
   - pytorch::torchaudio
   - pytorch::torchvision
   - pytorch::pytorch-cuda=12.1
   - gpytorch
-  - botorch>=0.95
+  - botorch>=0.10
   - deap
