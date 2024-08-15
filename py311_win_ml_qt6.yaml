@@ -1,45 +1,51 @@
-# Windows all-in-one standard for ML
 channels:
   - pytorch
   - gpytorch
-  - plotly
   - nvidia
   - conda-forge
+  - epics
   - nodefaults
   
 dependencies:
   - python=3.11
   - pip
   - pytest
-  - pytest-qt
   - ruff
-  
+  - py-spy
+
   - ipython
   - jupyterlab
   - jupyter-server-proxy
+  - nbconvert
   - dask
   - dask-jobqueue
   - dask-labextension
 
-  - matplotlib
+  - matplotlib-base
   - bokeh
   - seaborn
-  - plotly::plotly
+  - plotly
   - corner
   - arviz
   - dash
   - jupyter-dash
   - tqdm
-  - pyside6
+
+  - ipywidgets
+  - click
+  - rich
+  - textual
+  - tabulate
+
+  - pytest-qt
   - pyqtgraph
   - qtawesome
   - qtpy
-  - qscintilla2
-  - ipywidgets
- 
+
   - numpy>=1.24
   - scipy>=1.10
   - pandas>=2.0
+  - polars
   - scikit-learn
   - scikit-image
   - astropy
@@ -61,6 +67,7 @@ dependencies:
   - yaml
   - pydantic>=2.5
   - orjson
+  - protobuf
 
   - fftw
   - pyfftw
@@ -73,16 +80,23 @@ dependencies:
   - sqlite
   - python-gssapi
   - caproto
+  - pvapy
+  - fastapi
 
   - psutil
   - imageio
 
-#  - "ray-default"
-#  - prefect
-  - pytorch::pytorch>=2.1
+  - pytorch::pytorch>=2.2
   - pytorch::torchaudio
   - pytorch::torchvision
   - pytorch::pytorch-cuda=12.1
   - gpytorch
   - botorch>=0.10
   - deap
+  - pyro-ppl
+
+  - pip:
+    - ray[default]
+    - PyQt6
+    # - PyQt6-WebEngine
+    - PyQt6-QScintilla
