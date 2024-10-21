@@ -1,6 +1,6 @@
 channels:
   - pytorch
-  - gpytorch
+#  - gpytorch
   - nvidia
   - conda-forge
   - epics
@@ -13,6 +13,7 @@ dependencies:
   - ruff
   - memray
   - py-spy
+  - virtualenv
 
   - ipython
   - jupyterlab
@@ -46,7 +47,7 @@ dependencies:
   - qtpy
   - qscintilla2
 
-  - numpy>=1.24
+  - numpy>=1.24,<2.0
   - scipy>=1.10
   - pandas>=2.0
   - polars
@@ -57,12 +58,12 @@ dependencies:
 
   - numba
   - sympy
-  - numexpr
+#  - numexpr
   - cython
 
   - hdf5
   - h5py
-  - pytables
+#  - pytables
   - lz4
   - blosc
   - brotli
@@ -91,12 +92,12 @@ dependencies:
   - imageio
 
   #- prefect
-  - pytorch::pytorch>=2.2
+  - pytorch::pytorch>=2.3
   - pytorch::torchaudio
   - pytorch::torchvision
-  - pytorch::pytorch-cuda=12.1
+  - pytorch::pytorch-cuda=12.4
   - gpytorch
-  - botorch>=0.10
+  - conda-forge::botorch>=0.12
   - deap
   - pyro-ppl
   - jax>=0.4
