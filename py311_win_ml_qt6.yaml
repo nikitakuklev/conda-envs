@@ -12,6 +12,7 @@ dependencies:
   - pytest
   - ruff
   - py-spy
+  - virtualenv
 
   - ipython
   - jupyterlab
@@ -42,7 +43,7 @@ dependencies:
   - qtawesome
   - qtpy
 
-  - numpy>=1.24
+  - numpy>=1.24,<2.0
   - scipy>=1.10
   - pandas>=2.0
   - polars
@@ -53,12 +54,12 @@ dependencies:
 
   - numba
   - sympy
-  - numexpr
+#  - numexpr
   - cython
 
   - hdf5
   - h5py
-  - pytables
+#  - pytables
   - lz4
   - blosc
   - brotli
@@ -80,22 +81,23 @@ dependencies:
   - sqlite
   - python-gssapi
   - caproto
-  - pvapy
   - fastapi
 
   - psutil
   - imageio
 
-  - pytorch::pytorch>=2.2
+  - pytorch::pytorch>=2.3
   - pytorch::torchaudio
   - pytorch::torchvision
-  - pytorch::pytorch-cuda=12.1
+  - pytorch::pytorch-cuda=12.4
   - gpytorch
-  - botorch>=0.10
+  - botorch>=0.11
   - deap
   - pyro-ppl
+  - pymoo
 
   - pip:
+    - pvapy
     - ray[default]
     - PyQt6
     # - PyQt6-WebEngine
