@@ -82,6 +82,7 @@ dependencies:
   - python-gssapi
   - caproto
   - fastapi
+  - netifaces
 
   - psutil
   - imageio

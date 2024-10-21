@@ -87,7 +87,8 @@ dependencies:
   - caproto
   - pvapy
   - fastapi
-
+  - netifaces
+  
   - psutil
   - imageio
 
