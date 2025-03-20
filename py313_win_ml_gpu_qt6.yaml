@@ -1,13 +1,13 @@
 channels:
-  - pytorch
-  - gpytorch
-  - nvidia
+#  - pytorch
+#  - gpytorch
+#  - nvidia
   - conda-forge
   - epics
   - nodefaults
   
 dependencies:
-  - python=3.11
+  - python=3.13
   - pip
   - pytest
   - ruff
@@ -43,7 +43,7 @@ dependencies:
   - qtawesome
   - qtpy
 
-  - numpy>=1.24,<2.0
+  - numpy>=2.0
   - scipy>=1.10
   - pandas>=2.0
   - polars
@@ -87,10 +87,10 @@ dependencies:
   - psutil
   - imageio
 
-  - pytorch::pytorch>=2.3
-  - pytorch::torchaudio
-  - pytorch::torchvision
-  - pytorch::pytorch-cuda=12.4
+  - libtorch
+  - pytorch
+  - pytorch-cpu
+#  - pytorch-gpu
   - gpytorch
   - botorch>=0.11
   - deap
@@ -99,7 +99,7 @@ dependencies:
 
   - pip:
     - pvapy
-    - ray[default]
+    #- ray[default]
     - PyQt6
     # - PyQt6-WebEngine
     - PyQt6-QScintilla

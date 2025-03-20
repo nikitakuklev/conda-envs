@@ -1,7 +1,4 @@
 channels:
-  - pytorch
-#  - gpytorch
-  - nvidia
   - conda-forge
   - epics
   - nodefaults
@@ -11,7 +8,6 @@ dependencies:
   - pip
   - pytest
   - ruff
-  - memray
   - py-spy
   - virtualenv
 
@@ -26,7 +22,7 @@ dependencies:
   - matplotlib-base
   - bokeh
   - seaborn
-  - plotly
+#  - plotly
   - corner
   - arviz
   - dash
@@ -39,13 +35,8 @@ dependencies:
   - textual
   - tabulate
 
-  - pytest-qt
-  - pyqtgraph
-  - qtawesome
-  - qtpy
-
-  - numpy>=1.24,<2.0
-  - scipy>=1.10
+  - numpy<=1.26
+  - scipy
   - pandas>=2.0
   - polars
   - scikit-learn
@@ -67,7 +58,7 @@ dependencies:
   - zstd
   - zstandard
   - yaml
-  - pydantic>=2.5
+  - pydantic
   - orjson
   - protobuf
 
@@ -82,31 +73,21 @@ dependencies:
   - sqlite
   - python-gssapi
   - caproto
-  - pvapy
   - fastapi
-  - websockets
   - netifaces
 
   - psutil
   - imageio
-
-  - pytorch::pytorch>=2.3
-  - pytorch::torchaudio
-  - pytorch::torchvision
-  - pytorch::pytorch-cuda=12.4
-  - gpytorch
-  - conda-forge::botorch>=0.12
-  - deap
-  - pyro-ppl
-  - jax>=0.4
-  - numpyro
   
-  # linux
-  - htop
-  - ncdu
+  - pytest-xdist
+  - gitpython
+  - click
+  - gh
+  
+  - impactx=25.01
+  - openpmd-api
+  - jax
 
   - pip:
+    - pvapy
     - ray[default]
-    - PyQt6
-    # - PyQt6-WebEngine
-    - PyQt6-QScintilla

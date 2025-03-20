@@ -1,6 +1,6 @@
 channels:
   - pytorch
-#  - gpytorch
+  - gpytorch
   - nvidia
   - conda-forge
   - epics
@@ -11,7 +11,6 @@ dependencies:
   - pip
   - pytest
   - ruff
-  - memray
   - py-spy
   - virtualenv
 
@@ -70,7 +69,8 @@ dependencies:
   - pydantic>=2.5
   - orjson
   - protobuf
-
+  - grpcio
+  
   - fftw
   - pyfftw
 
@@ -82,30 +82,24 @@ dependencies:
   - sqlite
   - python-gssapi
   - caproto
-  - pvapy
   - fastapi
-  - websockets
   - netifaces
 
   - psutil
   - imageio
 
-  - pytorch::pytorch>=2.3
+  - pytorch::pytorch>=2.5
   - pytorch::torchaudio
   - pytorch::torchvision
   - pytorch::pytorch-cuda=12.4
   - gpytorch
-  - conda-forge::botorch>=0.12
+  - botorch>=0.11
   - deap
   - pyro-ppl
-  - jax>=0.4
-  - numpyro
-  
-  # linux
-  - htop
-  - ncdu
+  - pymoo
 
   - pip:
+    - pvapy
     - ray[default]
     - PyQt6
     # - PyQt6-WebEngine
