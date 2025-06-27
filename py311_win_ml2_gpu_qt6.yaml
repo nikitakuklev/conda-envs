@@ -1,7 +1,4 @@
 channels:
-#  - pytorch
-#  - gpytorch
-#  - nvidia
   - conda-forge
   - epics
   - nodefaults
@@ -10,6 +7,7 @@ dependencies:
   - python=3.11
   - pip
   - pytest
+  - pytest-cov
   - ruff
   - flake8
   - py-spy
@@ -92,7 +90,7 @@ dependencies:
   - pytorch
   - pytorch-gpu
   - gpytorch
-  - botorch>=0.11
+  - botorch>=0.12
   - deap
   - pyro-ppl
   - pymoo
@@ -103,3 +101,5 @@ dependencies:
     - PyQt6
     # - PyQt6-WebEngine
     - PyQt6-QScintilla
+    - jax
+    - pip
