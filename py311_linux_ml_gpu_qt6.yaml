@@ -91,6 +91,7 @@ dependencies:
   - psycopg2
   - redis-py
   - paramiko
+  - grpcio
   - paulscherrerinstitute::pcaspy
 
   - psutil
