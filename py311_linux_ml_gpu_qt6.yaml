@@ -71,6 +71,7 @@ dependencies:
   - pydantic>=2.5
   - orjson
   - protobuf
+  - pyarrow
 
   - fftw
   - pyfftw
@@ -87,6 +88,9 @@ dependencies:
   - fastapi
   - websockets
   - netifaces
+  - psycopg2
+  - redis-py
+  - paramiko
   - paulscherrerinstitute::pcaspy
 
   - psutil

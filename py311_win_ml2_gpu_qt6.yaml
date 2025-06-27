@@ -69,6 +69,7 @@ dependencies:
   - orjson
   - protobuf
   - grpcio
+  - pyarrow
   
   - fftw
   - pyfftw
@@ -83,11 +84,15 @@ dependencies:
   - caproto
   - fastapi
   - netifaces
+  - websockets
+  - psycopg2
+  - redis-py
+  - paramiko
 
   - psutil
   - imageio
 
-  - pytorch
+  - pytorch>=2.3
   - pytorch-gpu
   - gpytorch
   - botorch>=0.12
